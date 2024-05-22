@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Questrial&display=swap" rel="stylesheet">
+	<title> Comments Section Page </title>
+	<style>
+		body {
+				background: rgb(163,103,177);
+			background: linear-gradient(13deg, rgba(163,103,177,1) 17%, rgba(183,132,183,1) 34%, rgba(228,147,179,1) 51%, rgba(234,154,187,1) 68%, rgba(254,165,173,1) 85%, rgba(248,195,175,1) 100%);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			font-family: "Questrial", sans-serif;
+		}
+
+		.navbar {
+			background-color: #FCC5C0;
+		}
+
+		.nav-link {
+			color: blueviolet;
+		}
+
+		.container {
+			background-color: #FCC5C0;
+			padding: 15px;
+			align-text: center;
+			width: 700px;
+			border-radius: 20px;
+			width: 850px;
+		}
+
+		img {
+			margin-right: 13px;
+		}
+
+		.image {
+			margin-bottom: 30px;
+		}
+
+		form {
+			padding: 5px;
+		}
+
+		footer {
+			margin-top: 15px;
+			background-color: #BE8ABF;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm">
+		<div class="container-fluid">
+			<a href="index.html"> <img src="https://i.pinimg.com/564x/2d/80/bc/2d80bceb5388f2df015d8b8bda7818e8.jpg" class="rounded-circle" width=70px height=70px> </a>
+		<ul class="nav nav-pills me-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="mainpage.html"> Home </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="page2.html"> First Quarter Project </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="page3.html"> Second Quarter Project </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="page4.html"> Third Quarter Project </a>
+			<li class="nav-item">
+				<a class="nav-link active" href="comments.html">
+				Comments Section </a>
+			</li>
+		</ul>
+		<form class="d-flex">
+			<input class="form-control me-2" type="text" placeholder="Search">
+			<button class="btn btn-light" type="button"> Search </button>
+		</form>
+		</div>
+	</nav> <br> <br> <br>
+	<div class="container mt-1">
+		<div class="whats-next">
+			<h2> What's Next? </h2>
+			<p> As a student of ICT, I am excited about the upcoming academic year, as I know that it will be a time filled with a lot of learning opportunities. I am hopeful that next year will provide me with an enriched experience that will not only deepen my knowledge base but also equip me with new skills to further enhance my understanding of coding. The year ahead holds promise for intellectual growth and the development of skills that will be invaluable in my future endeavours. </p>
+		</div>
+	</div> <br>
+	
+	<div class="container mt-1">
+	<form id="commentSection">
+	<h2> Comment Section </h2> <br>
+		<div class="row username mb-3">
+			<label for="inputUsername" class="col-sm-2 col-form-label"> Username </label>
+			<div class="col-sm-10"> <input id="userName" type="text" name="fname" placeholder="Type username here">
+			</div>
+		</div>
+		<br>
+		<div class="row email mb-3">
+			<label for="inputEmail" class="col-sm-2 col-form-label"> Email </label>
+			<div class="col-sm-10"> <input id="userEmail" type="text" name="email" placeholder="Type email here">
+			</div>
+			<br> <br> <br>
+		</div>
+		<textarea id="userComment" rows="3" cols="100" name="comment" placeholder="Type your comment here"></textarea>
+			<br>
+		<input type="button" onclick="myFunction()" value="Submit">
+	</form> <br> <br>
+	<h3>Comments</h3>
+	<p id="data"></p>
+	<script>
+		function myFunction(){
+		let data = "";  let name = document.getElementById("userName").value
+		let email = document.getElementById("userEmail").value
+		let comment = document.getElementById("userComment").value
+		// process of comment being made
+		data = "User name : "+name+"<br/>User email : "+email+ "<br/>User comment : "+comment
+ 
+		document.getElementById("data").innerHTML = data  // display data to paragraph
+		}
+	</script>
+	</div>
+<footer>
+	<p> ‎ ‎ ‎ ‎ ‎ Jaerica Acedera ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 9-Emerald </p>
+</footer>
+</body>
+</html>
